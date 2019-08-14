@@ -1,5 +1,9 @@
+/*Esse arquivo de manupulação pode ser executado mais de uma vez, conforme necessidade de manipular os dados*/
+
+/*Antes de executar uma ação, esteja certo de que usa o banco certo através do comando abaixo */
 Use M_OpFlix
 
+/*Inserindo dados na tabela*/
 insert into Perfis(Nome)
 values ('Administrador'), ('Cliente');
 
@@ -62,6 +66,7 @@ values   ('O Rei Leão'
 insert into Favoritos (IdUsuario, IdLancamento)
 values (1,1), (1,2);
 
+/*Para visualizar as tabelas criadas*/
 select * from Perfis
 select * from Usuarios
 select * from Categorias

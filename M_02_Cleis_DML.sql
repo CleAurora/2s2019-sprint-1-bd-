@@ -63,6 +63,17 @@ values   ('O Rei Leão'
 		  ,1
 		  ,3);
 
+		 
+insert into Lancamentos(Nome, Sinopse, Duracao, DataLancamento, IdVeiculo, IdCategoria, IdClassificacao, IdTipo)
+values	  ('Alladin' 
+		  ,'Um jovem árabe que se apaixona por uma princesa e para conquistá-la conta com a ajuda de um gênio da lâmpada'
+		  ,102
+		  ,'2019-09-03'
+		  ,5
+		  ,2
+		  ,1
+		  ,3);
+
 insert into Favoritos (IdUsuario, IdLancamento)
 values (1,1), (1,2);
 

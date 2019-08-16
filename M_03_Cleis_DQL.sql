@@ -35,7 +35,11 @@ inner join Lancamentos
 on Lancamentos.IdLancamento = Favoritos.IdLancamento
 
 /*Para exportar arquivo como csv VER PORQUE NÃO FUNFA - Dados salvos em csv de forma manual*/
-sqlcmd DESKTOPCSP6HNI\SQLEXPRESS . M_OpFlix E M_03_Cleis_DQL "set nocount on; select * from Perfis" o "C:\Users\34132336883\Desktop\SENAI\GitHub\2s2019-sprint-1-bd-\Perfis" -W -s"," -h-1
+ 
+ -- SQLCMD:
+-- -S . = Servidor | -d curso = banco de dados | -E = Trusted Connection | -Q = query a ser executada | -o = Arquivo para salvar resultados | -W remove espaços em branco | -s"," = delimitar com , | -h-1 = remover a primeira linha de cabeçalho
+!!sqlcmd -S . -d M_OpFlix  -E -Q "set nocount on; select * from Perfis" -o "perfis.csv" -W -s"," -h-1
+
  
 
 /*Para verificar número de usuários*/
